@@ -26,9 +26,9 @@ module ALU
 localparam ADD 		= 4'b0000; 				//Instruccion ADD
 localparam SUB 		= 4'b0001; 				//Instruccion SUB
 localparam ORI		= 4'b0011;				//Instruccion ORI
-localparam LUI 		= 4'b0010; 				//Instruccion LUI
 localparam SLLI 	= 4'b0100; 				//Instruccion SLLI
 localparam SRLI		= 4'b0101;				//Instruccion SRLI
+localparam LUI 		= 4'b0010; 				//Instruccion LUI
 	
 	always @ (A_i or B_i or ALU_Operation_i)
 		begin
@@ -46,7 +46,6 @@ localparam SRLI		= 4'b0101;				//Instruccion SRLI
 			LUI:										//Operacion lui
 				ALU_Result_o = B_i;
 					
-		
 			default:
 				ALU_Result_o = 0;
 			endcase // case(control)
