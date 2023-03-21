@@ -20,15 +20,15 @@ module Immediate_Unit
 );
 
 
-
 always@(op_i, Instruction_bus_i) begin
-
+	//Instrucciones tipo I
 	if(op_i == 7'h13)
-		//					concat	operador repeticion,	bits del 20:31							operacion repeticion: bit 31 se repite 20 veces para completar 31 bits
+		//					concat	operador repeticion,	bits del 20:31							operacion repeticion: para rellenar los 32 bits
 		Immediate_o = {{20{Instruction_bus_i[31]}},Instruction_bus_i[31:20]};// I format
+	//Instrucciones tipo U
+	else if(op_i == 7'h37)
+		Immediate_o = {Instruction_bus_i[31:12],{12{1'b0}}};
 	else
-		Immediate_o = 0;// U format
+		Immediate_o = 0;// No se utiliza immediate entonces bandera en 0
 end
-
-
 endmodule // signExtend

@@ -24,12 +24,15 @@ module ALU
 );
 
 localparam ADD 		= 4'b0000; 				//Instruccion ADD
+localparam LUI = 4'b0010; 					//Instruccion LUI
 	
 	always @ (A_i or B_i or ALU_Operation_i)
 		begin
 			case (ALU_Operation_i)
 			ADD: 										//Operacion add
 				ALU_Result_o = A_i + B_i;
+			LUI:
+				ALU_Result_o = B_i;						//Operacion lui
 		
 			default:
 				ALU_Result_o = 0;
