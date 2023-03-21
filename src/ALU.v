@@ -28,6 +28,7 @@ localparam SUB 		= 4'b0001; 				//Instruccion SUB
 localparam ORI		= 4'b0011;				//Instruccion ORI
 localparam LUI 		= 4'b0010; 				//Instruccion LUI
 localparam SLLI 	= 4'b0100; 				//Instruccion SLLI
+localparam SRLI		= 4'b0101;				//Instruccion SRLI
 	
 	always @ (A_i or B_i or ALU_Operation_i)
 		begin
@@ -39,9 +40,12 @@ localparam SLLI 	= 4'b0100; 				//Instruccion SLLI
 			ORI:										//Operacion ori
 				ALU_Result_o = A_i | B_i;				
 			SLLI:										//Operacion slli
-				ALU_Result_o = A_i << B_i[4:0];				
+				ALU_Result_o = A_i << B_i[4:0];
+			SRLI:										//Operacion srli
+				ALU_Result_o = A_i >> B_i[4:0];					
 			LUI:										//Operacion lui
-				ALU_Result_o = B_i;			
+				ALU_Result_o = B_i;
+					
 		
 			default:
 				ALU_Result_o = 0;
