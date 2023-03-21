@@ -25,6 +25,7 @@ module ALU
 
 localparam ADD 		= 4'b0000; 				//Instruccion ADD
 localparam SUB 		= 4'b0001; 				//Instruccion SUB
+localparam ORI		= 4'b0011;				//Instruccion ORI
 localparam LUI 		= 4'b0010; 				//Instruccion LUI
 
 	
@@ -34,9 +35,11 @@ localparam LUI 		= 4'b0010; 				//Instruccion LUI
 			ADD: 										//Operacion add
 				ALU_Result_o = A_i + B_i;
 			SUB:										//Operacion sub
-				ALU_Result_o = A_i - B_i;				
+				ALU_Result_o = A_i - B_i;
+			ORI:
+				ALU_Result_o = A_i | B_i;				
 			LUI:										//Operacion lui
-				ALU_Result_o = B_i;						
+				ALU_Result_o = B_i;			
 		
 			default:
 				ALU_Result_o = 0;
