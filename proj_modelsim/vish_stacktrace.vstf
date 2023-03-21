@@ -1,0 +1,79 @@
+# Current time Mon Mar 20 17:22:32 2023
+# Program = vish
+# Id = "2021.2"
+# Version = "2021.04"
+# Date = "Apr 14 2021"
+# Platform = win64
+
+Exception c0000005 has occurred at address 40220b60. Traceback:
+# 0    0x40220b60: 'Mtirpc_Init + 0x986e0'
+# 1    0x4022094f: 'Mtirpc_Init + 0x984cf'
+# 2    0x401cf024: 'Mtirpc_Init + 0x46ba4'
+# 3    0x59ba7103: 'TclNRRunCallbacks + 0x63'
+# 4    0xf65d0d9a: 'Itcl_EvalMemberCode + 0x3ba'
+# 5    0xf65d1f5b: 'Itcl_ExecMethod + 0x23b'
+# 6    0xf65d9a19: 'Itcl_EvalArgs + 0x1c9'
+# 7    0xf65d4cf1: 'Itcl_HandleInstance + 0x2c1'
+# 8    0x59ba7103: 'TclNRRunCallbacks + 0x63'
+# 9    0xf65d0d9a: 'Itcl_EvalMemberCode + 0x3ba'
+# 10   0xf65d1f5b: 'Itcl_ExecMethod + 0x23b'
+# 11   0xf65d9a19: 'Itcl_EvalArgs + 0x1c9'
+# 12   0xf65d4cf1: 'Itcl_HandleInstance + 0x2c1'
+# 13   0x59ba7103: 'TclNRRunCallbacks + 0x63'
+# 14   0x59ba8974: 'Tcl_EvalEx + 0xa34'
+# 15   0x59ba7f68: 'Tcl_EvalEx + 0x28'
+# 16   0x599e431a: 'Tk_BindEvent + 0x91a'
+# 17   0x59a1bd41: 'TkBindEventProc + 0x291'
+# 18   0x59a2c614: 'Tk_HandleEvent + 0x2f4'
+# 19   0x59a2b2da: 'TkDeleteThreadExitHandler + 0x31a'
+# 20   0x59c5a56d: 'Tcl_ServiceEvent + 0xed'
+# 21   0x59c5a9e4: 'Tcl_DoOneEvent + 0x184'
+# 22   0x59a2aee5: 'Tk_MainLoop + 0x25'
+# 23   0x59a6d282: 'Tk_MainEx + 0x932'
+# 24   0x401abae2: 'Mtirpc_Init + 0x23662'
+# 25   0x401ae6c4: 'Mtirpc_Init + 0x26244'
+# 26   0x40775810: 'Tclsqlite3_Init + 0x1c000'
+# 27   0xd0e855a0: 'BaseThreadInitThunk + 0x10'
+# 28   0xd24c485b: 'RtlUserThreadStart + 0x2b'
+StackWalk failed 0
+# End of Stack Trace
+
+# Current time Mon Mar 20 18:09:10 2023
+# Program = vish
+# Id = "2021.2"
+# Version = "2021.04"
+# Date = "Apr 14 2021"
+# Platform = win64
+
+Exception c0000005 has occurred at address b0b526b8. Traceback:
+# 0    0xb0b526b8: '<unknown (@0xb0b526b8)>'
+# 1    0xd230fd7c: 'OleIsCurrentClipboard + 0x1b5c'
+# 2    0xd23ba157: 'RevokeActiveObjectExt + 0x9d27'
+# 3    0xd2373059: 'OleGetPackageClipboardOwner + 0xbc79'
+# 4    0xd2372739: 'OleGetPackageClipboardOwner + 0xb359'
+# 5    0xd23762b1: 'DoDragDrop + 0x131'
+# 6    0xb0b56799: 'Tkdnd_SafeInit + 0x14f9'
+# 7    0xb0b54555: '<unknown (@0xb0b54555)>'
+# 8    0x59ba7103: 'TclNRRunCallbacks + 0x63'
+# 9    0xb10d0d9a: 'Itcl_EvalMemberCode + 0x3ba'
+# 10   0xb10d1f5b: 'Itcl_ExecMethod + 0x23b'
+# 11   0xb10d9a19: 'Itcl_EvalArgs + 0x1c9'
+# 12   0xb10d4cf1: 'Itcl_HandleInstance + 0x2c1'
+# 13   0x59ba7103: 'TclNRRunCallbacks + 0x63'
+# 14   0x59ba8974: 'Tcl_EvalEx + 0xa34'
+# 15   0x59ba7f68: 'Tcl_EvalEx + 0x28'
+# 16   0x599e431a: 'Tk_BindEvent + 0x91a'
+# 17   0x59a1bd41: 'TkBindEventProc + 0x291'
+# 18   0x59a2c614: 'Tk_HandleEvent + 0x2f4'
+# 19   0x59a2b2da: 'TkDeleteThreadExitHandler + 0x31a'
+# 20   0x59c5a56d: 'Tcl_ServiceEvent + 0xed'
+# 21   0x59c5a949: 'Tcl_DoOneEvent + 0xe9'
+# 22   0x59a2aee5: 'Tk_MainLoop + 0x25'
+# 23   0x59a6d282: 'Tk_MainEx + 0x932'
+# 24   0x401abae2: 'Mtirpc_Init + 0x23662'
+# 25   0x401ae6c4: 'Mtirpc_Init + 0x26244'
+# 26   0x40775810: 'Tclsqlite3_Init + 0x1c000'
+# 27   0xd0e855a0: 'BaseThreadInitThunk + 0x10'
+# 28   0xd24c485b: 'RtlUserThreadStart + 0x2b'
+StackWalk failed 0
+# End of Stack Trace
