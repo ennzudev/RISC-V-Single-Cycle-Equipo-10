@@ -24,6 +24,7 @@ module ALU
 );
 
 localparam ADD 		= 4'b0000; 				//Instruccion ADD
+localparam SUB = 4'b0001; 					//Instruccion SUB
 localparam LUI = 4'b0010; 					//Instruccion LUI
 	
 	always @ (A_i or B_i or ALU_Operation_i)
